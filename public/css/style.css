@@ -1,0 +1,344 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.w40 {
+    width: 40px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul > li > span {
+    height: 100%;
+}
+
+ul > li > span:first-child {
+    width: 100px;
+    border-right: 1px solid #000;
+    background: skyblue;
+    text-align: center;
+}
+
+.select-type,
+.select-store {
+    display: flex;
+}
+
+.select-type li,
+.select-store li {
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.head-container {
+    margin-bottom: 20px;
+}
+
+.head-container > ul {
+    display: flex;
+}
+
+.step1 {
+    width: 500px;
+    border: 1px solid #000;
+    height: 70px;
+}
+
+.step2 {
+    width: 200px;
+    border: 1px solid #000;
+    height: 40px;
+}
+
+.step3 {
+    width: 250px;
+    border: 1px solid #000;
+    height: 40px;
+}
+
+.step4 {
+    width: 333px;
+    border: 1px solid #000;
+    height: 40px;
+}
+
+.product-num {
+    height: 30px;
+    font-size: 20px;
+}
+
+label {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.main-container > label > span {
+    margin-right: 5px;
+}
+
+.main-container > ul {
+    margin-bottom: 15px;
+}
+
+.new {
+    display: flex;
+}
+
+.new > span {
+    padding-left: 50px;
+}
+
+label > span {
+    padding-right: 5px;
+}
+
+.step5 {
+    width: 333px;
+    border: 1px solid #000;
+    height: 40px;
+}
+
+.main-container > ul {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+thead {
+    width: 100%;
+}
+
+th {
+    background: skyblue;
+}
+
+th,td {
+    border: 1px solid #000;
+    padding: 2px;
+    height: 25px;
+}
+
+.remarks {
+    height: 180px;
+}
+
+.title1 {
+    width: 15%;
+
+}
+.title2 {
+    width: 15%;
+}
+
+.title3 {
+    width: 15%;
+}
+
+.title4 {
+    width: 40%;
+}
+
+.title5 {
+    width: 15%;
+}
+
+input[type="text"] {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.foot-container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.foot-left,
+.foot-right {
+    width: 50%;
+    border: solid 1px #000;
+}
+
+.foot-left > span,
+.foot-right > span {
+    text-align: center;
+    border-bottom: solid 1px #000;
+    display: block;
+    background: skyblue;
+    height: 30px;
+}
+
+.foot-container > .foot-left > ul li > span,
+.foot-container > .foot-right > ul li > span {
+    display: inline-block;
+}
+
+.foot-container > .foot-left > ul li > span:first-child,
+.foot-container > .foot-right > ul li > span:first-child {
+    background: transparent;
+    border-right: none;
+}
+
+.foot-container > .foot-left > ul li > span:first-child {
+    width: 120px;
+    text-align: right;
+}
+
+.foot-container > .foot-left > ul li > span:nth-child(2) {
+    width: 200px;
+}
+
+.foot-container > .foot-left > ul li > span,
+.foot-container > .foot-right > ul li > span {
+    padding: 0 5px;
+}
+
+.foot-container > .foot-right > ul li > span {
+    font-size: 14px;
+}
+
+.foot-container > .foot-right > ul li > span:first-child {
+    width: 100px;
+    text-align: right;
+}
+
+.foot-container > .foot-right > ul li > span:nth-child(2) {
+    width: 180px;
+    text-align: right;
+}
+
+.foot-container > .foot-right > ul li > span:nth-child(3) {
+    width: 80px;
+    text-align: left;
+}
+
+.foot-container > .foot-right > ul li > span:nth-child(4) {
+    text-align: right;
+    width: 70px;
+}
+
+.foot-container ul {
+    padding: 5px;
+}
+
+.jpeg {
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.jpeg > span {
+    font-size: 40px;
+}
+
+.wd {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.wd > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wd > ul,
+.main_add {
+    width: 800px;
+    margin: 0 auto 50px;
+}
+
+.new_num > li > span{
+    background: transparent !important;
+    border-right: none !important;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    width: 150px !important;
+    display: inline-block;
+}
+
+.main_add > label > span {
+    display: inline-block;
+    width: 200px;
+}
+
+button {
+    padding: 4px 16px;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+}
+
+.wd200 {
+    width: 200px;
+}
+
+.wd a {
+    display: block;
+    text-align: right;
+}
+
+.error {
+    color: red;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.new_num > li > form {
+    display: inline-block;
+}
+
+td.title2 {
+    text-align: right;
+}
+
+.product_name {
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+}
+
+.tr {
+    text-align: right !important;
+}
+
+.cr {
+    color: red;
+}
+
+.fs16 {
+    font-size:16px !important;
+}
