@@ -281,4 +281,7 @@
             </li>
         </ul>
     </div>
+    <div class="foot_title">
+        かじそ仏壇
+    </div>
 </x-layout>

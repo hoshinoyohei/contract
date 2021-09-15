@@ -138,14 +138,15 @@ table > tbody > tr > td:nth-child(1) {
 
 .store_container {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .store_info {
-    width: 45%;
+    width: 48%;
 }
 
 .payment_info {
-    width: 55%;
+    width: 52%;
 }
 
 .store_container > ul > span {
@@ -155,13 +156,17 @@ table > tbody > tr > td:nth-child(1) {
     background-color: skyblue;
 }
 
-.store_container > ul > span,
 .store_container > ul {
     border: 1px solid #000;
 }
 
+.store_container > ul > span {
+    border-bottom: 1px solid #000;
+}
+
 .store_container > ul > li {
     font-size: 14px;
+    padding: 2px 0;
 }
 
 .store_container > .store_info > li > span,
@@ -201,7 +206,12 @@ table > tbody > tr > td:nth-child(1) {
 
 .store_container > .payment_info > li > span:nth-child(4) {
     width: 10%;
-    padding-left: 5px;
+    padding-left: 10px;
+}
+
+.foot_title {
+    text-align: center;
+    font-size: 30px;
 }
 
 
