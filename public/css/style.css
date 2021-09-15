@@ -1,0 +1,217 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    text-align: center;
+}
+
+nav > ul > li {
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.head_container {
+    margin-bottom: 15px;
+}
+
+nav,
+nav >ul,
+.head_container > ul,
+.head_container > ul > li,
+.info_container > ul,
+.info_container > ul > li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_container > ul > li,
+.info_container > ul > li {
+    flex: 1;
+    border: #000 1px solid;
+    height: 30px;
+}
+
+.head_container > ul > li.ht60 {
+    height: 60px;
+}
+
+.head_container ul >li span,
+.info_container > ul > li span {
+    width: 100px;
+    background-color: skyblue;
+    text-align: center;
+    border-right: #000 1px solid;
+}
+
+.head_container ul >li p {
+    display: inline-block;
+}
+
+.sertch_container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sertch_container > .left_content,
+.sertch_container > .right_content,
+.sertch_container > .left_content > label,
+.sertch_container > .right_content > label,
+.sertch_container > .left_content > label > input[type="text"] {
+    height: 100%;
+}
+
+.sertch_container > .left_content > label > input[type="text"] {
+    height: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.sertch_container > .right_content > span > a {
+    width: 100px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.info_container {
+    margin-bottom: 20px;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+table > thead > tr > th:nth-child(1),
+table > thead > tr > th:nth-child(2),
+table > thead > tr > th:nth-child(3),
+table > thead > tr > th:nth-child(5) {
+    width: 150px;
+}
+
+table > thead > tr >th,
+table > tbody > tr >td {
+    height: 25px;
+    border: 1px solid #000;
+}
+
+table > thead > tr > th,
+table > tbody > tr > td:nth-child(1) {
+    background-color: skyblue;
+}
+
+.note {
+    height: 200px;
+    background-color: #fff !important;
+}
+
+.store_container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.store_info {
+    width: 48%;
+}
+
+.payment_info {
+    width: 52%;
+}
+
+.store_container > ul > span {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.store_container > ul {
+    border: 1px solid #000;
+}
+
+.store_container > ul > span {
+    border-bottom: 1px solid #000;
+}
+
+.store_container > ul > li {
+    font-size: 14px;
+    padding: 2px 0;
+}
+
+.store_container > .store_info > li > span,
+.store_container > .payment_info > li > span {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.store_container > .store_info > li > span:nth-child(1) {
+    width: 25%;
+    text-align: right;
+}
+
+.store_container > .store_info > li > span:nth-child(2) {
+    width: 40%;
+}
+
+.store_container > .store_info > li > span:nth-child(3) {
+    width: 25%;
+    padding-left: 5px;
+}
+
+.store_container > .payment_info > li > span:nth-child(1) {
+    width: 20%;
+    text-align: right;
+}
+
+.store_container > .payment_info > li > span:nth-child(2) {
+    width: 35%;
+    text-align: right;
+}
+
+.store_container > .payment_info > li > span:nth-child(3) {
+    width: 15%;
+    padding-left: 5px;
+}
+
+.store_container > .payment_info > li > span:nth-child(4) {
+    width: 10%;
+    padding-left: 10px;
+}
+
+.foot_title {
+    text-align: center;
+    font-size: 30px;
+}
+
+
