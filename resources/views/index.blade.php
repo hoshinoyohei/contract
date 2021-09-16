@@ -83,15 +83,18 @@
         <div class="left_content">
             <label>
                 商品No
-                <input type="text" name="">
+                <form method="post" action="{{ route('posts.sertch') }}">
+                    @csrf
+                    <input type="text" name="buddhist_num">
+                </form>
             </label>
         </div>
         <div class="right_content">
             <span>
-                <a href="">仏壇追加</a>
+                <a href="{{ route('posts.create_1') }}">仏壇追加</a>
             </span>
             <span>
-                <a href="">仏具追加</a>
+                <a href="{{ route('posts.create_2') }}">仏具追加</a>
             </span>
         </div>
     </div>
@@ -99,7 +102,13 @@
         <ul>
             <li>
                 <span>商品名</span>
-                <p></p>
+                <p>
+                    @if(isset( $post ))
+                    <p>{{ $post->name }}</p>
+                    @else
+                    <p></p>
+                    @endif
+                </p>
             </li>
             <li>
                 <span>サイズ</span>
@@ -124,10 +133,29 @@
         <tbody>
             <tr>
                 <td>本体内容</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    @if(isset( $post ))
+                    <p>{{ $post->price }}</p>
+                    @else
+                    <p></p>
+                    @endif
+                </td>
+                <td>
+                    <form method="post" action="{{ route('posts.good_1') }}">
+                        @csrf
+                        <input type="text" name="good_num_1">
+                    </form>
+                </td>
+                <td>@if(isset( $good_1 ))
+                    <p>{{ $good_1->name }}</p>
+                    @else
+                    <p></p>
+                    @endif</td>
+                <td>@if(isset( $good_1 ))
+                    <p>{{ $good_1->price }}</p>
+                    @else
+                    <p></p>
+                    @endif</td>
             </tr>
             <tr>
                 <td>仏具</td>

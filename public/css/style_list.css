@@ -1,0 +1,42 @@
+.back_link {
+    font-size: 20px;
+}
+
+.list_container {
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.list_form {
+    padding-bottom: 10px;
+}
+
+.list_form > span{
+    font-size: 20px;
+    width: 200px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.list_form > input[type="text"] {
+    width: 200px;
+    font-size: 20px;
+}
+
+.list_btn{
+    padding: 4px 12px;
+    font-size: 20px;
+}
+
+.good_1_list {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.good_1_list > li > span {
+    font-size: 16px;
+    width: 250px;
+    display: inline-block;
+}
