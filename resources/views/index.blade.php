@@ -141,10 +141,7 @@
                     @endif
                 </td>
                 <td>
-                    <form method="post" action="{{ route('posts.good_1') }}">
-                        @csrf
-                        <input type="text" name="good_num_1">
-                    </form>
+                    <input type="text" id="good_num_1">
                 </td>
                 <td>@if(isset( $good_1 ))
                     <p>{{ $good_1->name }}</p>

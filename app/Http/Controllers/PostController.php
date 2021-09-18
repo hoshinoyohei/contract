@@ -72,17 +72,15 @@ class PostController extends Controller
 
     public function good_1(Request $request)
     {
+        $result = $request->all();
         $goods = Good::all();
+        return $goods;
 
         foreach($goods as $good) {
-            if ($good->num == $request->good_num_1)
+            if ($good->num === $result['code'])
             {
-                return view('index')
-                    ->with(['good_1' => $good]);
+                return $good;
             }
         }
-
-        return redirect()
-            ->route('posts.index');
     }
 }
