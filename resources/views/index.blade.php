@@ -170,7 +170,7 @@
                     <p id="good_1_name"></p>
                 </td>
                 <td>
-                    <p id="good_1_price"></p>
+                    <p id="good_1_price" class="butu_price"></p>
                 </td>
             </tr>
             <tr>
@@ -178,18 +178,30 @@
                 <td>
                     <p id="sub_price"></p>
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_2">
+                </td>
+                <td>
+                    <p id="good_2_name"></p>
+                </td>
+                <td>
+                    <p id="good_2_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>お焚き上げ</td>
                 <td>
                     <input type="text" class="input_data">
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_3">
+                </td>
+                <td>
+                    <p id="good_3_name"></p>
+                </td>
+                <td>
+                    <p id="good_3_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -198,9 +210,15 @@
                 <td>
                     <input type="text" class="input_data">
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_4">
+                </td>
+                <td>
+                    <p id="good_4_name"></p>
+                </td>
+                <td>
+                    <p id="good_4_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -209,9 +227,15 @@
                 <td>
                     <input type="text" class="input_data">
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_5">
+                </td>
+                <td>
+                    <p id="good_5_name"></p>
+                </td>
+                <td>
+                    <p id="good_5_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -220,9 +244,15 @@
                 <td>
                     <input type="text" class="input_data">
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_6">
+                </td>
+                <td>
+                    <p id="good_6_name"></p>
+                </td>
+                <td>
+                    <p id="good_6_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -231,23 +261,41 @@
                 <td>
                     <input type="text" class="input_data">
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_7">
+                </td>
+                <td>
+                    <p id="good_7_name"></p>
+                </td>
+                <td>
+                    <p id="good_7_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>消費税</td>
                 <td id="tax"></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_8">
+                </td>
+                <td>
+                    <p id="good_8_name"></p>
+                </td>
+                <td>
+                    <p id="good_8_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>合計金額</td>
                 <td id="total_sum"></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_9">
+                </td>
+                <td>
+                    <p id="good_9_name"></p>
+                </td>
+                <td>
+                    <p id="good_9_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -256,36 +304,63 @@
                 <td>
                     <input type="text" id="discount">
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_10">
+                </td>
+                <td>
+                    <p id="good_10_name"></p>
+                </td>
+                <td>
+                    <p id="good_10_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td colspan="2">御支払い</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_11">
+                </td>
+                <td>
+                    <p id="good_11_name"></p>
+                </td>
+                <td>
+                    <p id="good_11_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>前受金</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_12">
+                </td>
+                <td>
+                    <p id="good_12_name"></p>
+                </td>
+                <td>
+                    <p id="good_12_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>中間金</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" id="good_num_13">
+                </td>
+                <td>
+                    <p id="good_13_name"></p>
+                </td>
+                <td>
+                    <p id="good_13_price" class="butu_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>残金</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td colspan="2">
+                    <span id="butu_click">仏具合計(クリック)</span>
+                </td>
+                <td>
+                    <p id="butu_total_1"></p>
+                </td>
             </tr>
         </tbody>
             <tr>

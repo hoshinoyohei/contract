@@ -78,4 +78,148 @@ class PostController extends Controller
             }
         }
     }
+    public function good_2(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_3(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_4(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_5(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_6(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_7(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_8(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_9(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_10(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_11(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_12(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
+    public function good_13(Request $request)
+    {
+        $result = $request->all();
+        $goods = Good::all();
+
+        foreach($goods as $good) {
+            if ($good->num == $result['code'])
+            {
+                return $good;
+            }
+        }
+    }
 }

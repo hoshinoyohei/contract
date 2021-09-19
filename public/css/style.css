@@ -248,3 +248,12 @@ table > tbody > tr > td:nth-child(1) {
     box-sizing: border-box;
     text-align: center;
 }
+
+#butu_click {
+    background-color: pink;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
