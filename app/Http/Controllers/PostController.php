@@ -55,29 +55,24 @@ class PostController extends Controller
 
     public function sertch(Request $request)
     {
+        $result = $request->all();
         $posts = Post::all();
 
         foreach($posts as $post) {
-            if ($post->num === $request->buddhist_num)
+            if ($post->num === $result['code'])
             {
-                return view('index')
-                    ->with(['post' => $post]);
+                return $post;
             }
         }
-
-        return redirect()
-            ->route('posts.index');
-
     }
 
     public function good_1(Request $request)
     {
         $result = $request->all();
         $goods = Good::all();
-        return $goods;
 
         foreach($goods as $good) {
-            if ($good->num === $result['code'])
+            if ($good->num == $result['code'])
             {
                 return $good;
             }

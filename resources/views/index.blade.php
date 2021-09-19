@@ -27,29 +27,65 @@
         <ul>
             <li>
                 <span>宗派</span>
-                <p></p>
+                <p>
+                    <input type="text" class="wd100">
+                </p>
             </li>
             <li>
                 <span>所属寺</span>
-                <p></p>
+                <p>
+                    <input type="text" class="wd100">
+                </p>
             </li>
             <li>
                 <span>仏壇</span>
-                <p></p>
+                <select>
+                    <option>有</option>
+                    <option>無</option>
+                </select>
             </li>
             <li>
                 <span>寸法</span>
-                <p></p>
+                <select>
+                    <option>なし</option>
+                    <option>30代</option>
+                    <option>50代</option>
+                    <option>70代</option>
+                    <option>100代</option>
+                    <option>120代</option>
+                    <option>150代</option>
+                    <option>200代</option>
+                    <option>300代</option>
+                    <option>モダン上置</option>
+                    <option>モダン台付</option>
+                </select>
             </li>
             <li>
                 <span>担当</span>
-                <p></p>
+                <select>
+                    <option>社長</option>
+                    <option>藤本</option>
+                    <option>星野</option>
+                    <option>高橋</option>
+                    <option>北嶋</option>
+                    <option>柴田</option>
+                    <option>中村</option>
+                    <option>福田</option>
+                    <option>峰田</option>
+                    <option>竹内</option>
+                    <option>山口</option>
+                    <option>勝矢</option>
+                    <option>常廣</option>
+                    <option>近藤</option>
+                </select>
             </li>
         </ul>
         <ul>
             <li>
                 <span>契約日</span>
-                <p></p>
+                <p>
+                    <input type="date">
+                </p>
             </li>
             <li>
                 <span>納品予定</span>
@@ -67,15 +103,15 @@
         <ul>
             <li>
                 <span>受注金額</span>
-                <p></p>
+                <p id="tax_excluded"></p>
             </li>
             <li>
                 <span>消費税</span>
-                <p></p>
+                <p id="consumption_tax"></p>
             </li>
             <li>
                 <span>御支払総額</span>
-                <p></p>
+                <p id="tax_included"></p>
             </li>
         </ul>
     </div>
@@ -83,10 +119,7 @@
         <div class="left_content">
             <label>
                 商品No
-                <form method="post" action="{{ route('posts.sertch') }}">
-                    @csrf
-                    <input type="text" name="buddhist_num">
-                </form>
+                <input type="text" id="buddhist_num">
             </label>
         </div>
         <div class="right_content">
@@ -102,13 +135,7 @@
         <ul>
             <li>
                 <span>商品名</span>
-                <p>
-                    @if(isset( $post ))
-                    <p>{{ $post->name }}</p>
-                    @else
-                    <p></p>
-                    @endif
-                </p>
+                <p id="buddhist_name"></p>
             </li>
             <li>
                 <span>サイズ</span>
@@ -134,85 +161,101 @@
             <tr>
                 <td>本体内容</td>
                 <td>
-                    @if(isset( $post ))
-                    <p>{{ $post->price }}</p>
-                    @else
-                    <p></p>
-                    @endif
+                    <p id="main_price"></p>
                 </td>
                 <td>
                     <input type="text" id="good_num_1">
                 </td>
-                <td>@if(isset( $good_1 ))
-                    <p>{{ $good_1->name }}</p>
-                    @else
-                    <p></p>
-                    @endif</td>
-                <td>@if(isset( $good_1 ))
-                    <p>{{ $good_1->price }}</p>
-                    @else
-                    <p></p>
-                    @endif</td>
+                <td>
+                    <p id="good_1_name"></p>
+                </td>
+                <td>
+                    <p id="good_1_price"></p>
+                </td>
             </tr>
             <tr>
                 <td>仏具</td>
-                <td></td>
+                <td>
+                    <p id="sub_price"></p>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
                 <td>お焚き上げ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" class="input_data">
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text" class="input_data">
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text" class="input_data">
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text" class="input_data">
+                </td>
                 <td></td>
                 <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text" class="input_data">
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
                 <td>消費税</td>
-                <td></td>
+                <td id="tax"></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
                 <td>合計金額</td>
-                <td></td>
+                <td id="total_sum"></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>
+                    <input type="text" class="discount">
+                </td>
+                <td>
+                    <input type="text" id="discount">
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
