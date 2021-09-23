@@ -56,3 +56,5 @@ Route::post('/posts/good_12', [PostController::class, 'good_12'])
     ->name('posts.good_12');
 Route::post('/posts/good_13', [PostController::class, 'good_13'])
     ->name('posts.good_13');
+
+Route::post('/posts/csv-imports/csv', [PostController::class, 'store']);

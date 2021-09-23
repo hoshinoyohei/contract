@@ -4,6 +4,13 @@
     </div>
 
     <h1>仏具一覧</h1>
+    <form role="form" method="post" action="csv-imports/csv" enctype="multipart/form-data">
+    {{ csrf_field() }}
+        <input type="file" name="csv_file">
+        <div class="form-group">
+            <button type="submit" class="ui blue button">インポート</button>
+        </div>
+    </form>
 
     <div class="list_container">
         <form method="post" action="{{ route('posts.add_2') }}">
@@ -34,7 +41,7 @@
         @foreach ($goods as $good)
             <li>
                 <span>{{ $good->num }}</span>
-                <span>{{ $good->name }}</span>
+                <span id="list_name">{{ $good->name }}</span>
                 <span>{{ $good->price }}</span>
             </li>
         @endforeach
