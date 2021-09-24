@@ -22,6 +22,12 @@ a {
     display: inline-block;
 }
 
+pre {
+    margin: 3px;
+    position: relative;
+    left: -55px;
+}
+
 select {
     width: 100%;
     font-size: 18px;
@@ -51,7 +57,7 @@ tr {
 }
 
 nav > ul > li {
-    font-size: 20px;
+    font-size: 25px;
     padding-right: 5px;
 }
 
@@ -76,8 +82,8 @@ nav >ul,
     height: 30px;
 }
 
-.head_container > ul > li.ht60 {
-    height: 60px;
+.head_container > ul > li.ht70 {
+    height: 70px;
 }
 
 .head_container ul >li span,
@@ -233,7 +239,7 @@ table > tbody > tr > td:nth-child(1) {
 #consumption_tax,
 #tax_included {
     width: 150px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #discount,
@@ -256,4 +262,47 @@ table > tbody > tr > td:nth-child(1) {
     height: 100%;
     cursor: pointer;
     font-size: 18px;
+}
+
+.info_container > ul > li + li {
+    width: 30%;
+}
+
+.info_container > ul > li > p > span {
+    background-color: transparent;
+    border-right: none;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 2px;
+    display: inline-block;
+    width: 70px;
+}
+
+.head_container > ul > li > p > span{
+    background-color: transparent;
+    border-right: none;
+    display: inline-block;
+    width: 60px;
+}
+
+.head_container > ul > li > p > span + span {
+    text-align: left;
+}
+
+#post > li > p {
+    position: relative;
+    left: -50px;
+}
+
+#post > li > p + p{
+    position: relative;
+    left: 0px;
+}
+
+#post > li > p > span > img{
+    width: 30px;
+}
+
+#price_parent > li {
+    height: 45px;
 }

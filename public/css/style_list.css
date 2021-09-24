@@ -41,6 +41,10 @@
     display: inline-block;
 }
 
-#list_name {
+#list_name_1 {
+    width: 200px;
+}
+
+#list_name_2 {
     width: 550px;
 }

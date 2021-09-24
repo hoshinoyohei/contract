@@ -1,5 +1,5 @@
 <x-layout>
-    <h1>契約書</h1>
+    <h1>契 約 書</h1>
     <nav>
         <ul>
             <li>□新規仏壇</li>
@@ -14,14 +14,19 @@
         </ul>
     </nav>
     <div class="head_container">
-        <ul>
-            <li class="ht60">
+        <ul id="post">
+            <li class="ht70">
                 <span>御氏名</span>
                 <p></p>
             </li>
-            <li class="ht60">
+            <li class="ht70 post_parent">
                 <span>御住所/TEL</span>
-                <p></p>
+                <p>
+                    <span><img src="{{ asset('img/post.png') }}" alt="郵便番号"></span>
+                </p>
+                <p>
+                    <span><img src="{{ asset('img/phone.png') }}" alt="電話番号"><pre>(                 )            -</pre></span>
+                </p>
             </li>
         </ul>
         <ul>
@@ -89,18 +94,27 @@
             </li>
             <li>
                 <span>納品予定</span>
-                <p></p>
+                <p>
+                    <span>・</span>
+                    <span>・</span>
+                </p>
             </li>
             <li>
                 <span>納品実績</span>
-                <p></p>
+                <p>
+                    <span>・</span>
+                    <span>・</span>
+                </p>
             </li>
             <li>
                 <span>引取予定</span>
-                <p></p>
+                <p>
+                    <span>・</span>
+                    <span>・</span>
+                </p>
             </li>
         </ul>
-        <ul>
+        <ul id="price_parent">
             <li>
                 <span>受注金額</span>
                 <p id="tax_excluded"></p>
@@ -139,11 +153,19 @@
             </li>
             <li>
                 <span>サイズ</span>
-                <p></p>
+                <p>
+                    <span>幅</span>
+                    <span>高</span>
+                    <span>奥</span>
+                </p>
             </li>
             <li>
                 <span>仏間</span>
-                <p></p>
+                <p>
+                    <span>幅</span>
+                    <span>高</span>
+                    <span>奥</span>
+                </p>
             </li>
         </ul>
     </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Good;
+use App\Models\Nara;
 
 class PostController extends Controller
 {
@@ -69,6 +70,11 @@ class PostController extends Controller
     public function good_1(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -81,6 +87,11 @@ class PostController extends Controller
     public function good_2(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -93,6 +104,11 @@ class PostController extends Controller
     public function good_3(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -105,6 +121,11 @@ class PostController extends Controller
     public function good_4(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -117,6 +138,11 @@ class PostController extends Controller
     public function good_5(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -129,6 +155,11 @@ class PostController extends Controller
     public function good_6(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -141,6 +172,11 @@ class PostController extends Controller
     public function good_7(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -153,6 +189,11 @@ class PostController extends Controller
     public function good_8(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -165,6 +206,11 @@ class PostController extends Controller
     public function good_9(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -177,6 +223,11 @@ class PostController extends Controller
     public function good_10(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -189,6 +240,11 @@ class PostController extends Controller
     public function good_11(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -201,6 +257,11 @@ class PostController extends Controller
     public function good_12(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -213,6 +274,11 @@ class PostController extends Controller
     public function good_13(Request $request)
     {
         $result = $request->all();
+
+        if($result['code'] === null) {
+            return $result;
+        }
+        
         $goods = Good::all();
 
         foreach($goods as $good) {

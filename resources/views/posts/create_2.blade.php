@@ -41,7 +41,7 @@
         @foreach ($goods as $good)
             <li>
                 <span>{{ $good->num }}</span>
-                <span id="list_name">{{ $good->name }}</span>
+                <span id="list_name_2">{{ $good->name }}</span>
                 <span>{{ $good->price }}</span>
             </li>
         @endforeach

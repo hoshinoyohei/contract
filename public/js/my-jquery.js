@@ -164,7 +164,7 @@
         url: "/posts/good_5",
         dataType: "json",
         data: {
-            code: $('#good_num_1').val(),
+            code: $('#good_num_5').val(),
         },
 
         })
@@ -224,7 +224,7 @@
         url: "/posts/good_7",
         dataType: "json",
         data: {
-            code: $('#good_num_1').val(),
+            code: $('#good_num_7').val(),
         },
 
         })

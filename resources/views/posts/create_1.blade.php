@@ -34,7 +34,7 @@
         @foreach ($posts as $post)
             <li>
                 <span>{{ $post->num }}</span>
-                <span>{{ $post->name }}</span>
+                <span id="list_name_1">{{ $post->name }}</span>
                 <span>{{ $post->price }}</span>
             </li>
         @endforeach
