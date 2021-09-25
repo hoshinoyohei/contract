@@ -15,7 +15,7 @@
         {{ $slot }}
     </div>
 
-    <script src="{{ asset('/js/main.js') }}"></script>
-    <script src="{{ asset('/js/my-jquery.js') }}"></script>
+    <script src="{{ mix('/js/main.js') }}"></script>
+    <script src="{{ mix('/js/my-jquery.js') }}"></script>
 </body>
 </html>
