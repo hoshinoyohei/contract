@@ -87,7 +87,8 @@
             <li>
                 <span>契約日</span>
                 <p>
-                    <input type="date">
+                    <span>・</span>
+                    <span>・</span>
                 </p>
             </li>
             <li>

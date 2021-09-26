@@ -1,3 +1,7 @@
+body {
+    font-weight: bold;
+}
+
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -253,6 +257,7 @@ table > tbody > tr > td:nth-child(1) {
     height: 100%;
     box-sizing: border-box;
     text-align: center;
+    font-size: 20px;
 }
 
 #butu_click {
@@ -305,8 +310,4 @@ table > tbody > tr > td:nth-child(1) {
 
 .post_parent {
     justify-content: start !important;
-}
-
-input[type="date"] {
-    font-size: 14px;
 }
