@@ -21,12 +21,10 @@
             </li>
             <li class="ht70 post_parent">
                 <span>御住所/TEL</span>
-                <p>
-                    <span><img src="{{ asset('img/post.png') }}" alt="郵便番号"></span>
-                </p>
-                <p>
-                    <span><img src="{{ asset('img/phone.png') }}" alt="電話番号"><pre>(                 )            -</pre></span>
-                </p>
+                <span><img src="{{ asset('img/post.png') }}" alt="郵便番号"></span>
+                <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;ー&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
+                <span><img src="{{ asset('img/phone.png') }}" alt="電話番号"></span>
+                <span>（&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;）&ensp;&ensp;&ensp;&ensp;ー</span>
             </li>
         </ul>
         <ul>

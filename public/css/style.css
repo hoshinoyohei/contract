@@ -289,20 +289,24 @@ table > tbody > tr > td:nth-child(1) {
     text-align: left;
 }
 
-#post > li > p {
-    position: relative;
-    left: -50px;
+#post > li > span + span {
+    background-color: transparent;
+    border-right: none;
+    width: auto;
 }
 
-#post > li > p + p{
-    position: relative;
-    left: 0px;
-}
-
-#post > li > p > span > img{
+#post > li > span > img {
     width: 30px;
 }
 
 #price_parent > li {
     height: 45px;
+}
+
+.post_parent {
+    justify-content: start !important;
+}
+
+input[type="date"] {
+    font-size: 14px;
 }
