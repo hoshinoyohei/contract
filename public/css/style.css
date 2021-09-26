@@ -41,6 +41,8 @@ select {
 input[type="text"] {
     font-size: 18px;
     text-align: center;
+    width: 150px;
+    font-weight: bold;
 }
 
 input[type="text" i] {
@@ -142,7 +144,7 @@ table > thead > tr > th:nth-child(1),
 table > thead > tr > th:nth-child(2),
 table > thead > tr > th:nth-child(3),
 table > thead > tr > th:nth-child(5) {
-    width: 150px;
+    width: 100px;
 }
 
 table > thead > tr >th,
