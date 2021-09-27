@@ -278,7 +278,7 @@ class PostController extends Controller
         if($result['code'] === null) {
             return $result;
         }
-        
+
         $goods = Good::all();
 
         foreach($goods as $good) {
@@ -327,5 +327,45 @@ class PostController extends Controller
 
         return redirect()
             ->route('posts.create_2');
+    }
+
+    public function store_1(Request $request)
+    {
+        // setlocaleを設定
+        setlocale(LC_ALL, 'ja_JP.UTF-8');
+
+        // アップロードしたファイルを取得
+        // 'csv_file' はCSVファイルインポート画面の inputタグのname属性
+        $uploaded_file = $request->file('csv_file');
+
+        // アップロードしたファイルの絶対パスを取得
+        $file_path = $request->file('csv_file')->path($uploaded_file);
+
+        $file = new \SplFileObject($file_path);
+        $file->setFlags(\SplFileObject::READ_CSV);
+        $file->setFlags(\SplFileObject::READ_CSV | \SplFileObject::READ_AHEAD | \SplFileObject::SKIP_EMPTY);
+
+        $row_count = 1;
+        foreach ($file as $row)
+        {
+            // 1行目のヘッダーは取り込まない
+            if ($row_count > 1)
+            {
+                $id = mb_convert_encoding($row[0], 'UTF-8', 'SJIS');
+                $name = mb_convert_encoding($row[1], 'UTF-8', 'SJIS');
+                $price = mb_convert_encoding($row[2], 'UTF-8', 'SJIS');
+
+                // ここで値をデータベースに保存したりする
+                $post = new Post();
+                $post->num = $id;
+                $post->name = $name;
+                $post->price = $price;
+                $post->save();
+            }
+            $row_count++;
+        }
+
+        return redirect()
+            ->route('posts.create_1');
     }
 }

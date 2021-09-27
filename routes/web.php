@@ -58,5 +58,6 @@ Route::post('/posts/good_13', [PostController::class, 'good_13'])
     ->name('posts.good_13');
 
 Route::post('/posts/csv-imports/csv', [PostController::class, 'store']);
+Route::post('/posts/csv-imports/csv_1', [PostController::class, 'store_1']);
 
-URL::forceScheme('https');
+// URL::forceScheme('https');

@@ -1,5 +1,5 @@
 <x-layout>
-    <h1>契 約 書</h1>
+    <h1>見 積 書</h1>
     <nav>
         <ul>
             <li>□新規仏壇</li>
@@ -377,7 +377,7 @@
                 <td>残金</td>
                 <td></td>
                 <td colspan="2">
-                    <span id="butu_click">仏具合計(クリック)</span>
+                    <span id="butu_click">仏具合計</span>
                 </td>
                 <td>
                     <p id="butu_total_1"></p>

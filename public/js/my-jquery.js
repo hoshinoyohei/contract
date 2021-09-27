@@ -1,6 +1,12 @@
 'use strict';
 
 {
+    const butu_click = document.getElementById('butu_click');
+
+    function SHclick() {
+        butu_click.click();
+    }
+
     $("#buddhist_num").change(function () {
         $.ajaxSetup({
         headers: {
@@ -24,6 +30,7 @@
             const main_price = document.getElementById('main_price');
             buddhist_name.textContent = res['name'];
             main_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -54,6 +61,7 @@
             const good_1_price = document.getElementById('good_1_price');
             good_1_name.textContent = res['name'];
             good_1_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -84,6 +92,7 @@
             const good_2_price = document.getElementById('good_2_price');
             good_2_name.textContent = res['name'];
             good_2_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -114,6 +123,7 @@
             const good_3_price = document.getElementById('good_3_price');
             good_3_name.textContent = res['name'];
             good_3_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -144,6 +154,7 @@
             const good_4_price = document.getElementById('good_4_price');
             good_4_name.textContent = res['name'];
             good_4_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -174,6 +185,7 @@
             const good_5_price = document.getElementById('good_5_price');
             good_5_name.textContent = res['name'];
             good_5_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -204,6 +216,7 @@
             const good_6_price = document.getElementById('good_6_price');
             good_6_name.textContent = res['name'];
             good_6_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -234,6 +247,7 @@
             const good_7_price = document.getElementById('good_7_price');
             good_7_name.textContent = res['name'];
             good_7_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -264,6 +278,7 @@
             const good_8_price = document.getElementById('good_8_price');
             good_8_name.textContent = res['name'];
             good_8_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -294,6 +309,7 @@
             const good_9_price = document.getElementById('good_9_price');
             good_9_name.textContent = res['name'];
             good_9_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -324,6 +340,7 @@
             const good_10_price = document.getElementById('good_10_price');
             good_10_name.textContent = res['name'];
             good_10_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -354,6 +371,7 @@
             const good_11_price = document.getElementById('good_11_price');
             good_11_name.textContent = res['name'];
             good_11_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -384,6 +402,7 @@
             const good_12_price = document.getElementById('good_12_price');
             good_12_name.textContent = res['name'];
             good_12_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
@@ -414,6 +433,7 @@
             const good_13_price = document.getElementById('good_13_price');
             good_13_name.textContent = res['name'];
             good_13_price.textContent = res['price'];
+            SHclick();
         })
         //通信が失敗したとき
         .fail((error) => {
